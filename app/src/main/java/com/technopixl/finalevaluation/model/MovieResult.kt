@@ -2,6 +2,7 @@ package com.technopixl.finalevaluation.model
 
 
 import com.google.gson.annotations.SerializedName
+import retrofit2.Response
 
 data class MovieResult(
     val page: Int, // 1
@@ -11,6 +12,7 @@ data class MovieResult(
     @SerializedName("total_results")
     val totalResults: Int // 20000
 ) {
+
     data class Result(
         val adult: Boolean, // false
         @SerializedName("backdrop_path")
